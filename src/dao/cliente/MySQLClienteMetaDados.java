@@ -1,0 +1,30 @@
+package dao.cliente;
+
+/**
+ * Metadados da tabela cliente para o banco de dados MySQL.
+ */
+public interface MySQLClienteMetaDados {
+
+    /**
+     * string com o nome da tabela usada no banco
+     */
+    public static final String TABLE = "CLIENTE";
+
+    /**
+     * vetor de string com as chaves da tabela
+     */
+    public static final String[] PK = {"CLIENTEID"};
+
+    /**
+     * string com os campos para serem utilizados com insert
+     */
+    public static String METADADOSINSERT = "CLIENTEID, NOME, CPF ";
+
+    /**
+     * Retorna uma string com os campos para serem utilizados com select
+     */
+    public static String METADADOSSELECT
+            = TABLE + ".CLIENTEID, "
+            + TABLE + ".NOME, "
+            + TABLE + ".CPF";
+}
