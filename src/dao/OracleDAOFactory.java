@@ -26,34 +26,74 @@ public class OracleDAOFactory extends DAOFactory {
         setSenha(OracleDadosBanco.SENHA);
     }
 
+   /**
+     * Retorna a classe do driver.
+     *
+     * @return Uma String com a classe do driver.
+     */
     public String getDriverClass() {
         return driverClass;
     }
 
+    /**
+     * Modifica a classe do driver.
+     *
+     * @param driverClass Uma string com a classe do driver.
+     */
     public void setDriverClass(String driverClass) {
         this.driverClass = driverClass;
     }
 
+    /**
+     * Retorna a JDBC URL.
+     *
+     * @return Uma String com a JDBC URL.
+     */
     public String getJdbcURL() {
         return jdbcURL;
     }
 
+    /**
+     * Modifica o JDBC URL.
+     *
+     * @param jdbcURL Uma string com o JDBC URL.
+     */
     public void setJdbcURL(String jdbcURL) {
         this.jdbcURL = jdbcURL;
     }
 
+    /**
+     * Retorna o usuário
+     *
+     * @return Uma String com o usuário.
+     */
     public String getUsuario() {
         return usuario;
     }
 
+    /**
+     * Modifica o usuário.
+     *
+     * @param usuario Uma string com o usuário.
+     */
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
 
+    /**
+     * Retorna a senha.
+     *
+     * @return Uma String com a senha.
+     */
     public String getSenha() {
         return senha;
     }
 
+    /**
+     * Modifica a senha.
+     *
+     * @param senha Uma string com a senha.
+     */
     public void setSenha(String senha) {
         this.senha = senha;
     }

@@ -20,14 +20,14 @@ public class Cliente {
     private String cpf;
 
     /**
-     * Construtor sem argumentos da classe.
+     * Construtor sem parâmetros da classe.
      */
     public Cliente() {
         this(-1, "", "");
     }
 
     /**
-     * Construtor com argumentos da classe.
+     * Construtor com parâmetros da classe.
      *
      * @param clienteId Um id de cliente como Inteiro.
      * @param nome Um nome de cliente.
@@ -40,7 +40,7 @@ public class Cliente {
     }
 
     /**
-     * Construtor com argumentos da classe.
+     * Construtor com parâmetros da classe.
      *
      * @param clienteId Um id de cliente como String.
      * @param nome Um nome de cliente.
