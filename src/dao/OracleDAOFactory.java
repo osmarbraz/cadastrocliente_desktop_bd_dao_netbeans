@@ -26,7 +26,7 @@ public class OracleDAOFactory extends DAOFactory {
         setSenha(OracleDadosBanco.SENHA);
     }
 
-   /**
+    /**
      * Retorna a classe do driver.
      *
      * @return Uma String com a classe do driver.

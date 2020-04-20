@@ -1,8 +1,8 @@
-# Sistema de Cadastro de Clientes para Desktop em Banco de Dados Oracle ou MySQL utilizando o padr„o Abstract Factory.
- - Este programa possui diversas classes organizada nos pacotes vis„o, modelo e dao.<br>
- - Utiliza o padr„o abstract factory para abstrair os bancos de dados Oracle e MySQL.
- - Toda iteraÁ„o com banco de dados È tratada diretamente pelo DAO(Data Access Object).<br>
- - Os dados de configuraÁ„o(Servidor, Database, Usuario, Senha) da integraÁ„o do java com o banco de dados est„o no arquivo src/DadosBanco.java.<br>
- - A especificaÁ„o da f·brica a ser utilizada È feita na interface Fabrica.java.
- - Crie o banco de dados antes de executar o projeto, as especificaÁıes das tabelas est„o no arquivo banco_mysql.sql e banco_oracle.sql.<br>
- - A pasta src contÍm os fontes do projeto e na pasta  lib o driver jdbc para Oracle e MySQL.<br>
+# Sistema de Cadastro de Clientes para Desktop em Banco de Dados Oracle ou MySQL utilizando o padr√£o Abstract Factory.
+ - Este programa possui diversas classes organizada nos pacotes vis√£o, modelo e dao.<br>
+ - Utiliza o padr√£o abstract factory para abstrair os bancos de dados Oracle e MySQL.
+ - Toda itera√ß√£o com banco de dados √© tratada diretamente pelo DAO(Data Access Object).<br>
+ - Os dados de configura√ß√£o(Servidor, Database, Usuario, Senha) da integra√ß√£o do java com o banco de dados est√£o no arquivo src/DadosBanco.java.<br>
+ - A especifica√ß√£o da f√°brica a ser utilizada √© feita na interface Fabrica.java.
+ - Crie o banco de dados antes de executar o projeto, as especifica√ß√µes das tabelas est√£o no arquivo banco_mysql.sql e banco_oracle.sql.<br>
+ - A pasta src cont√™m os fontes do projeto e na pasta  lib o driver jdbc para Oracle e MySQL.<br>
