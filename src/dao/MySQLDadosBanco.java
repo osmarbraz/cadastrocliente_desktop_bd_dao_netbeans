@@ -11,6 +11,6 @@ public interface MySQLDadosBanco {
     public String SENHA = "";
     public String SERVIDOR = "localhost";
     public String DATABASE = "cliente";
-    public String DRIVER = "com.mysql.jdbc.Driver";
+    public String DRIVER = "com.mysql.cj.jdbc.Driver";
     public String PORTA = "3306";
 }

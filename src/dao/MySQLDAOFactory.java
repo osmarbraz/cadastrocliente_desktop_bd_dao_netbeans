@@ -21,7 +21,7 @@ public class MySQLDAOFactory extends DAOFactory {
      */
     public MySQLDAOFactory() {
         setDriverClass(MySQLDadosBanco.DRIVER);
-        setJdbcURL("jdbc:mysql://" + MySQLDadosBanco.SERVIDOR + ":" + MySQLDadosBanco.PORTA + "/" + MySQLDadosBanco.DATABASE + "?autoReconnect=true&useSSL=false");
+        setJdbcURL("jdbc:mysql://" + MySQLDadosBanco.SERVIDOR + ":" + MySQLDadosBanco.PORTA + "/" + MySQLDadosBanco.DATABASE + "??useSSL=false&useTimezone=true&serverTimezone=UTC");
         setUsuario(MySQLDadosBanco.USUARIO);
         setSenha(MySQLDadosBanco.SENHA);
     }

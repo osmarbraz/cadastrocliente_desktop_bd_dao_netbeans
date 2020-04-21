@@ -1,4 +1,6 @@
-# Sistema de Cadastro de Clientes para Desktop em Banco de Dados Oracle ou MySQL utilizando o padrão Abstract Factory.
+# Sistema de Cadastro de Clientes para Desktop em Banco de Dados Oracle ou MySQL utilizando o padrão Abstract Factory para a IDE NetBeans.
+ - Está é uma versão do sistema para a IDE NetBeans.<br> 
+ - O projeto no NetBeans deve ser chamado cadastrocliente_desktop_bd_dao_netbeans.<br>
  - Este programa possui diversas classes organizada nos pacotes visão, modelo e dao.<br>
  - Utiliza o padrão abstract factory para abstrair os bancos de dados Oracle e MySQL.
  - Toda iteração com banco de dados é tratada diretamente pelo DAO(Data Access Object).<br>
