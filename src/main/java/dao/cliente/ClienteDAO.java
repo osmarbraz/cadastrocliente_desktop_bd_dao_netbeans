@@ -1,7 +1,8 @@
 package dao.cliente;
 
-import java.util.List;
 import modelo.Cliente;
+
+import java.util.List;
 
 /**
  * DAO é um Design Pattern que encapsula e abstrai o acesso aos dados.

@@ -1,9 +1,11 @@
 package visao;
 
+import dao.cliente.ClienteDAO;
 import dao.DAOFactory;
 import dao.Factory;
 import modelo.Cliente;
-import dao.cliente.ClienteDAO;
+
+
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.event.WindowEvent;

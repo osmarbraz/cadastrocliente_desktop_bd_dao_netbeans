@@ -1,9 +1,13 @@
 package dao;
 
-import java.util.*;
-import java.sql.*;
 import dao.cliente.ClienteDAO;
 import dao.cliente.MySQLClienteDAO;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Collection;
+import java.util.Iterator;
 
 /**
  * Implementação da Fábrica para o banco de dados Oracle.

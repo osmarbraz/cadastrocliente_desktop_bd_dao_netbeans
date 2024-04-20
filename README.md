@@ -10,9 +10,11 @@
  - Os dados de configuração(Servidor, Database, Usuario, Senha) da integração do java com o banco de dados estão no arquivo src/DadosBanco.java.<br>
  - A especificação da fábrica a ser utilizada é feita na interface Fabrica.java.
  - Crie o banco de dados antes de executar o projeto, as especificações das tabelas estão no arquivo banco_mysql.sql e banco_oracle.sql.<br>
+ - Dependência do Driver JDBC foi especificada no arquivo pom.xml.<br>
  - A pasta src contêm os fontes do projeto.<br>
+ - A interface gráfica foi construída **sem** o auxílio da IDE NetBeans.<br>
 
 ## Arquivos
 
-- *.sql - Script do banco de daddos.
+- *.sql - Script do banco de dados.
 - pom.xml - Arquivo de configurção da ferramenta de automação Maven.
