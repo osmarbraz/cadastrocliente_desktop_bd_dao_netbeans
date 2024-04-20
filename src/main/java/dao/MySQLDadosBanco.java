@@ -8,7 +8,7 @@ public interface MySQLDadosBanco {
 
     //Altere aqui os dados do seu banco de dados	
     public String USUARIO = "root";
-    public String SENHA = "";
+    public String SENHA = "root";
     public String SERVIDOR = "localhost";
     public String DATABASE = "cliente";
     public String DRIVER = "com.mysql.cj.jdbc.Driver";

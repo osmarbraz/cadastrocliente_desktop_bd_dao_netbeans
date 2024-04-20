@@ -4,7 +4,7 @@ create database if not exists cliente;
 #entrar no database cliente
 use cliente;
 
-#remove as tabelas para recri·-las
+#remove as tabelas para recri√°-las
 drop table if exists CLIENTE;
 
 #cria a tabela de cliente
@@ -14,7 +14,6 @@ CREATE TABLE CLIENTE(
 	CPF        VARCHAR(11) NOT NULL,
 	PRIMARY KEY(CLIENTEID)    
 );
-
 
 #lista a tabela criada
 show tables;

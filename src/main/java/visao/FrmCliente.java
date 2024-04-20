@@ -79,7 +79,7 @@ public class FrmCliente extends JFrame {
         contentPane.setLayout(null);
 
         //Defino o tamanho da janela
-        this.setSize(new Dimension(310, 250));
+        this.setSize(new Dimension(310, 270));
 
         //Defino o titulo da janela
         this.setTitle("Cadastro de Cliente");
@@ -276,7 +276,7 @@ public class FrmCliente extends JFrame {
             DAOFactory factory = DAOFactory.getDAOFactory(Factory.FABRICA);
             ClienteDAO clienteDAO = factory.getClienteDAO();
             //Recupero o cliente com o id
-            Cliente cliente = clienteDAO.recuperarPelaChave(new Cliente(jTClienteId.getText(), "", ""));
+            Cliente cliente = clienteDAO.consultarChave(new Cliente(jTClienteId.getText(), "", ""));
             //Verifico se o cliente foi encontrado
             if (cliente != null) {
                 jTClienteId.setText(cliente.getClienteId() + "");
@@ -299,7 +299,7 @@ public class FrmCliente extends JFrame {
             DAOFactory factory = DAOFactory.getDAOFactory(Factory.FABRICA);
             ClienteDAO clienteDAO = factory.getClienteDAO();
             //Recupero o cliente com o id
-            Cliente cliente = clienteDAO.recuperarPelaChave(new Cliente(jTClienteId.getText(), "", ""));
+            Cliente cliente = clienteDAO.consultarChave(new Cliente(jTClienteId.getText(), "", ""));
             //Verifico se o cliente foi encontrado
             if (cliente != null) {
                 jTClienteId.setText(cliente.getClienteId() + "");
@@ -353,7 +353,7 @@ public class FrmCliente extends JFrame {
         DAOFactory factory = DAOFactory.getDAOFactory(Factory.FABRICA);
         ClienteDAO clienteDAO = factory.getClienteDAO();
         //Recupro um interador com uma lista de todos clientes no banco de dados	        
-        Iterator it = clienteDAO.getLista().iterator();
+        Iterator it = clienteDAO.consultarTudo().iterator();
         //Percorro a lista de clientes enquanto existir cliente
         while (it.hasNext()) {
             //Recupero um cliente da lista	

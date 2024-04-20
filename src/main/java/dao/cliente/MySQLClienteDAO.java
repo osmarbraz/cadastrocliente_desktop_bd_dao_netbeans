@@ -2,14 +2,14 @@ package dao.cliente;
 
 import java.util.*;
 import java.sql.*;
-import dao.OracleDAOFactory;
+import dao.MySQLDAOFactory;
 import modelo.Cliente;
 
 /**
  * Implementação do dao de cliente para o banco de dados Oracle.
  *
  */
-public class OracleClienteDAO extends OracleDAOFactory implements ClienteDAO, OracleClienteMetaDados {
+public class MySQLClienteDAO extends MySQLDAOFactory implements ClienteDAO, MySQLClienteMetaDados {
 
     /**
      * Executa uma consulta de cliente no bando de dados.
@@ -87,7 +87,7 @@ public class OracleClienteDAO extends OracleDAOFactory implements ClienteDAO, Or
                 sql.append(METADADOSINSERT + " ) ");
 
                 sql.append("values ('" + preparaSQL(cliente.getClienteId() + ""));
-                sql.append("','" + preparaSQL(cliente.getNome() + ""));
+                sql.append("','" + preparaSQL(cliente.getNome()) + "");
                 sql.append("','" + preparaSQL(cliente.getCpf()) + "')");
 
                 con = getConnection();
@@ -230,7 +230,7 @@ public class OracleClienteDAO extends OracleDAOFactory implements ClienteDAO, Or
      * @return Uma lista com todos os objetos cliente do banco de dados.
      */
     @Override
-    public List getLista() {
+    public List consultarTudo() {
         return select("select " + METADADOSSELECT + " from " + TABLE + " order by " + TABLE + "." + PK[0]);
     }
 
@@ -279,7 +279,7 @@ public class OracleClienteDAO extends OracleDAOFactory implements ClienteDAO, Or
      * cliente.
      */
     @Override
-    public Cliente recuperarPelaChave(Object objetoCliente) {
+    public Cliente consultarChave(Object objetoCliente) {
 
         //Aplica o filtro
         List lista = aplicarFiltro(objetoCliente);

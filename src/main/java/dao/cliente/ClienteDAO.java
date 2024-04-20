@@ -19,8 +19,8 @@ public interface ClienteDAO {
 
     public List aplicarFiltro(Object objetoCliente);
 
-    public Cliente recuperarPelaChave(Object objetoCliente);
+    public Cliente consultarChave(Object objetoCliente);
 
-    public List getLista();
+    public List consultarTudo();
 
 }
