@@ -24,5 +24,24 @@
             <type>pom</type>
         </dependency>         
     </dependencies>
+    
     <name>cadastrocliente_desktop_bd_dao_netbeans</name>
+    <build>        
+        <!-- Plugins do Maven -->
+        <plugins>
+            <!-- Configura o programa principal do projeto -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>Principal</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>           
+        </plugins>        
+    </build>
 </project>
